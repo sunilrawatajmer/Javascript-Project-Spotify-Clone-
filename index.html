@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="Spotify_App_Logo.svg-removebg-preview.png">Spotify</li>
+        </ul>
+    </nav>
+
+    <div class="Container">
+        <div class="songlist">
+            <h1>Best of NCC - no copyright sounds</h1>
+            <div class="songlists">
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/1.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Tere Sang Yaara</span>
+                    <span class="songlistPlay"><span class="timePlay">00:28 <i id="0" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+               <div class="songItem">
+                    <audio>
+                        <source src="songs/2.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Mera Ishq he tu</span>
+                    <span class="songlistPlay"><span class="timePlay">00:30 <i id="1" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/3.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Mera Ishq he tu</span>
+                    <span class="songlistPlay"><span class="timePlay">00:30<i id="2" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/4.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">heeriye-heeriye</span>
+                    <span class="songlistPlay"><span class="timePlay">3:10 <i id="3" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/5.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Ham to Diwane</span>
+                    <span class="songlistPlay"><span class="timePlay">00:24 <i id="4" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/6.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Malang Sajna</span>
+                    <span class="songlistPlay"><span class="timePlay">00:31<i id="5" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/7.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Meri Jaan</span>
+                    <span class="songlistPlay"><span class="timePlay">00:21 <i id="6" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/8.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Malang Sajna</span>
+                    <span class="songlistPlay"><span class="timePlay">3:10 <i id="7" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/9.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Mera Ishq he Tu</span>
+                    <span class="songlistPlay"><span class="timePlay">00:30 <i id="8" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <audio>
+                        <source src="songs/10.mp3" type="audio/ogg">
+                    </audio>
+                    <img>
+                    <span class="songName">Tu Mile Jaha</span>
+                    <span class="songlistPlay"><span class="timePlay">00:21<i id="9" class="fa curentPlay fa-play-circle-o"></i></span>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgessBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- icons -->
+            <i class="fa fa-step-backward" style="font-size:48px;color:red" id="forward"></i>
+            <i class="fa fa-play-circle-o" style="font-size:48px;color:red" id="masterPlay"></i>
+            <i class="fa fa-step-forward" style="font-size:48px;color:red"  id="backward"></i>
+        </div>
+        <div class="songInfo">
+            <img src="soundWaveWithBg-removebg-preview.png " width="250px" id="wave"><marquee behavior="scroll" direction="left"><span id="masterSongName">Tere Sang Yaara</span></marquee> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
